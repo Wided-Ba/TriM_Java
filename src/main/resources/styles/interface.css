@@ -1,0 +1,195 @@
+.white-background {
+    -fx-background-color: #fff;
+}
+
+.transparent{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.round-layout{
+    -fx-border-radius: 50;
+    -fx-border-color: #D7D7D7;
+}
+
+.selected{
+    -fx-background-color:rgb(241, 252, 255);
+    -fx-background-radius: 20px;
+    -fx-border-width: 0 20 0 0;
+    -fx-border-color:rgb(241, 252, 255);
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #E4E4E4;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0 20 0 0;
+    -fx-border-color:#E4E4E4;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0), 10, 0, 0, 10);
+}
+
+#avatarimg {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-background-color: transparent;
+    -fx-border-color: black; /* Couleur de la bordure */
+    -fx-border-width: 2px; /* Largeur de la bordure */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+#logo {
+    -fx-background-radius: 20px;
+}
+
+#vbox1 {
+    -fx-background-color:rgb(239, 254, 255);
+}
+
+#vbox2 {
+    -fx-background-color: rgb(239, 254, 255);
+}
+
+
+#vbox3 {
+    -fx-background-color: rgba(255, 255, 255, 0); /* Couleur de fond avec transparence */
+    -fx-background-radius: 35px; /* Rayon de fond */
+}
+
+
+#vbox5 {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-background-radius: 35px;
+}
+
+#borderpane {
+    -fx-background-color: rgb(241, 252, 255);;
+
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: rgb(199, 219, 217);
+}
+#circle {
+// -fx-fill: radial-gradient(center, radius, #FFFFFF, #CCCCCC); /* Dégradé de remplissage */
+    -fx-stroke: linear-gradient(from 0% 0% to 100% 100%, #2F3E44, #91bbc1); /* Dégradé de contour */
+    -fx-stroke-width: 3; /* Largeur du contour */
+}
+#ListRendezVous
+{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+
+}
+
+#pane2
+{
+
+    -fx-background-color: #f5f5f0;
+    -fx-background-radius: 20px;
+
+}
+#ajouterRendezAction
+{
+    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#ajouterAction
+{    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#btnGenererPDF{
+    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#AjouterReclam
+{
+    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#AjouterRendezV
+{
+    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#EditReclamation
+{    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#ShowAction {
+    -fx-background-color: #08bc41;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    height :"240px";
+}
+#ShowAction:hover {
+    -fx-background-color: #0a7d0a;
+}
+#specialiteMedEdit{
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#specialiteMedEdit:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+#NomMedEdit{
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#NomMedEdit:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+#pane4
+{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); /* Gaussian blur, shadow color, radius, spread, offset X, offset Y */
+    -fx-background-radius: 10;
+}
+#pane3 {
+    -fx-background-color: #40ba40;
+    -fx-background-radius: 10 0 0 10;
+}
+#num , #num1 , #num2 {
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-font-family: "Berlin Sans FB";
+}
+#pane5 {
+    -fx-background-color: #fb4040;
+    -fx-background-radius: 10 0 0 10;
+}
+#pane6 {
+    -fx-background-color: #4646fa;
+    -fx-background-radius: 10 0 0 10;
+}
+#nbr {
+    -fx-font-size: 17;
+    -fx-text-fill: grey;
+    -fx-font-weight: bold;
+}

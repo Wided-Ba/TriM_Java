@@ -1,0 +1,119 @@
+.root {
+    -fx-background-color: rgb(241, 252, 255);
+}
+
+#ajoutMaladie {
+    -fx-font-size: 28;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: #2f3e44;
+}
+
+#tfType , #tfNom {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: "Berlin Sans FB"; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#tfSymptome , #tfDescription {
+    -fx-font-size: 15;
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-text-fill: #333;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#btnAjouter {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#btnAjouter:hover {
+    -fx-background-color: rgb(100, 140, 150);
+}
+
+#listMaladies {
+    -fx-background-color: #08bc41;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+}
+#listMaladies:hover {
+    -fx-background-color: #0a7d0a;
+}
+
+#nom ,#type , #symp , #desc , #listMeds{
+    -fx-font-size: 20;
+    -fx-text-fill: #2f3e44;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+
+#typeError, #nomError , #sympError , #descError ,#selectMedError{
+    -fx-text-fill: red;
+    -fx-font-size: 17;
+    -fx-font-family: "Berlin Sans FB";
+}
+#iconAdd {
+    -fx-font-size: 18;
+}
+#pane {
+    -fx-background-color: #f5f5f0;
+    -fx-background-radius: 20px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 20px;
+}
+
+#selectMedecin {
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.combo-box {
+    -fx-border-radius: 50px;
+    -fx-font-size: 15px;
+    -fx-font-family: 'Open Sans', 'Helvetica Neue', 'Arail' , 'Sans-Serif';
+    -fx-font-weight: 700;
+    -fx-background-radius: 50px;
+}
+
+.combo-box:hover {
+    -fx-text-fill: white;
+}
+.combo-box-base:hover {
+    -fx-text-fill: green;
+}
+
+.combo-box .list-view {
+    -fx-border-color: #ACACAC;
+    -fx-background-color: white;
+    -fx-padding: 0;
+    -fx-font-weight: 700;
+    -fx-border-radius: 10px 10px 0 0;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+#nomMed {
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+#mals , #ord , #profile ,#dec{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 20;
+}
+#nomMed {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}

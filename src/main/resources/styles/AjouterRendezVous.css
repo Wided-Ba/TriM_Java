@@ -1,0 +1,270 @@
+.root{
+    -fx-background-color: #f5f5f0;
+    -fx-background-radius: 10px;
+}
+#pane
+{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+}
+#titleText
+{
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 24px; /* Taille de la police */
+    -fx-text-fill: #005187; /* Couleur du texte */
+
+    -fx-padding: 10px; /* Espacement interne */
+
+}
+#text{
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 20px; /* Taille de la police */
+    -fx-text-fill: #005187; /* Couleur du texte */
+
+    -fx-padding: 10px; /* Espacement interne */
+}
+#sidebar {
+    -fx-background-color: #c4dafa;
+    height :"240px";
+    -fx-background-radius: 10px;
+
+}
+
+#ajouterRendezAction{
+    -fx-background-color: #c4dafa;
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#Reclamation
+{
+    -fx-background-color: #f5f5f0;
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#EditRendezVous
+{
+    -fx-background-color: #c4dafa;
+    height :"240px";
+    -fx-background-radius: 10px;
+
+}
+#ajouterRendezAction
+{
+    -fx-background-color: rgb(135, 172, 181);
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#EditReclamation1{
+    -fx-background-color: #c4dafa;
+    height :"240px";
+    -fx-background-radius: 10px;
+}
+#ListRendezVous
+{
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+
+}
+
+#Show {
+    -fx-background-color: #08bc41;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    height :"240px";
+}
+#Show:hover {
+    -fx-background-color: #0a7d0a;
+}
+#motifAjout {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#motifAjout:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+
+#motifEdit {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#motifEdit:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+
+#statusAjout {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#statusAjout:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+
+#statusEdit {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#statusEdit:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+#dateAjout {
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+
+}
+
+#dateAjout .arrow-button {
+    -fx-background-color: #f0f0f0; /* Couleur de fond du bouton */
+    -fx-background-radius: 0; /* Supprime le rayon de la bordure */
+}
+
+#dateAjout .arrow-button:hover {
+    -fx-background-color: #ddd; /* Couleur de fond du bouton au survol */
+}
+
+#dateAjout .arrow-button:pressed {
+    -fx-background-color: #ccc; /* Couleur de fond du bouton lorsqu'il est enfoncé */
+}
+
+#dateAjout .text-field {
+    -fx-background-color: #f0f0f0; /* Couleur de fond du champ de texte */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+}
+
+#dateAjout .text-field:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+
+
+
+#dateEdit {
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+
+}
+
+#dateEdit .arrow-button {
+    -fx-background-color: #f0f0f0; /* Couleur de fond du bouton */
+    -fx-background-radius: 0; /* Supprime le rayon de la bordure */
+}
+
+#dateEdit.arrow-button:hover {
+    -fx-background-color: #ddd; /* Couleur de fond du bouton au survol */
+}
+
+#dateEdit .arrow-button:pressed {
+    -fx-background-color: #ccc; /* Couleur de fond du bouton lorsqu'il est enfoncé */
+}
+
+#dateEdit .text-field {
+    -fx-background-color: #f0f0f0; /* Couleur de fond du champ de texte */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+}
+
+#dateEdit.text-field:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+
+#specialiteMed {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+
+#specialiteMed:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+
+#NomMed {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+#addEmployee_search
+{
+    -fx-background-radius: 15;
+    -fx-font-size: 15;
+}
+#NomMed:focused {
+    -fx-border-color: #66afe9; /* Couleur de la bordure lorsqu'il est sélectionné */
+    -fx-background-color: #fff; /* Couleur de fond lorsqu'il est sélectionné */
+}
+#descriptionAjout
+{
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+#descriptionEdit
+{
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: Arial, sans-serif; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px; /* Espacement interne */
+}
+#ListReclamation {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+}

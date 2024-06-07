@@ -1,0 +1,95 @@
+.root {
+    -fx-background-color: rgb(241, 252, 255);
+}
+
+#list {
+    -fx-font-weight: bold;
+    -fx-font-size: 35;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#listMaladies {
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+#retour {
+    -fx-background-radius: 20;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-cursor: hand;
+}
+
+.edit-button {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-pref-width: 80px;
+    -fx-cursor: hand;
+}
+
+.delete-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-pref-width: 80px;
+    -fx-cursor: hand;
+}
+
+#header {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-background-radius: 10 10 0 0;
+
+    -fx-border-radius: 10 10 0 0;
+}
+#nomMal ,#actions {
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#vbox5 {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-background-radius: 35px;
+}
+#circle {
+// -fx-fill: radial-gradient(center, radius, #FFFFFF, #CCCCCC);
+    -fx-stroke: linear-gradient(from 0% 0% to 100% 100%, #2F3E44, #91bbc1);
+    -fx-stroke-width: 3;
+}
+
+#afficheMaladies ,#btnListOrd ,#Profile,#disconnect {
+    -fx-cursor: hand;
+}
+
+#search {
+    -fx-background-radius: 15;
+    -fx-font-size: 15;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-background-color: inherit;
+}
+#recherche {
+    -fx-font-size: 17;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: #2f3e44;
+}
+#vbox3 {
+     /* Dégradé de couleur pour l'arrière-plan */
+    -fx-background-radius: 35; /* Rayon des coins pour arrondir le contour */
+    -fx-border-color: #cccccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 35;
+}
+#profile , #ords , #mals ,#contact,#dec{
+    -fx-font-size: 20;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#maladie {
+    -fx-background-radius: 10;
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-family: "Berlin Sans FB";
+}

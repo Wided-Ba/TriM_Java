@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #e0e8f0, #a3b8d6); /* Dégradé de couleur */
+}
+
+
+.label {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: #333; /* Couleur du texte */
+}
+
+.button {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: #fff; /* Couleur du texte */
+    -fx-background-color: #5e81ac; /* Couleur de fond */
+    -fx-background-radius: 5px; /* Arrondi des bords */
+    -fx-border-radius: 5px; /* Arrondi des bords */
+    -fx-padding: 10px 20px;
+}
+
+.button:hover {
+    -fx-background-color: #2e6da4; /* Couleur de fond au survol */
+}
+
+.button:pressed {
+    -fx-background-color: #1c4f82; /* Couleur de fond lorsqu'appuyé */
+}

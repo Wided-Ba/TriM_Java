@@ -1,0 +1,68 @@
+. root {
+    -fx-border-radius: 10;
+}
+
+#maladieBox {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #cccccc;
+    -fx-background-color: white;
+}
+
+#type , #symptome ,#doc {
+    -fx-font-size: 18;
+    -fx-font-family: "Berlin Sans FB";
+}
+#nomMaladie {
+    -fx-font-size: 28;
+    -fx-text-fill: #02027c;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#modifier {
+    -fx-background-color: #36ba36;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 16;
+}
+#supprimer {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-background-radius: 15;
+    -fx-font-size: 16;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#supprimer:hover {
+    -fx-background-color: #b80101;
+}
+#modifier:hover {
+    -fx-background-color: #018501;
+}
+
+
+#typeMaladie , #symptomeMaladie ,#medNomPrenom{
+    -fx-font-size: 17;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#maladie {
+    -fx-background-radius:10;
+    -fx-cursor: hand;
+}
+
+#titre {
+    -fx-font-size: 28;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+.selected{
+    -fx-background-color:rgb(241, 252, 255);
+    -fx-background-radius: 20px;
+    -fx-border-width: 0 20 0 0;
+    -fx-border-color:rgb(241, 252, 255);
+}
+

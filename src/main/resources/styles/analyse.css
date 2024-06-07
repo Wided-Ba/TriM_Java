@@ -1,0 +1,192 @@
+.white-background {
+    -fx-background-color: #fff;
+}
+
+.transparent{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.round-layout{
+    -fx-border-radius: 50;
+    -fx-border-color: #D7D7D7;
+}
+
+.selected{
+    -fx-background-color:rgb(241, 252, 255);
+    -fx-background-radius: 20px;
+    -fx-border-width: 0 20 0 0;
+    -fx-border-color:rgb(241, 252, 255);
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #E4E4E4;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0 20 0 0;
+    -fx-border-color:#E4E4E4;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0), 10, 0, 0, 10);
+}
+
+#avatarimg {
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-background-color: transparent;
+    -fx-border-color: black; /* Couleur de la bordure */
+    -fx-border-width: 2px; /* Largeur de la bordure */
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+#logo {
+    -fx-background-radius: 20px;
+}
+
+#vbox1 {
+    -fx-background-color:rgb(239, 254, 255);
+}
+
+#vbox2 {
+    -fx-background-color: rgb(239, 254, 255);
+}
+
+
+#vbox3 {
+    -fx-background-color: rgba(255, 255, 255, 0); /* Couleur de fond avec transparence */
+    -fx-background-radius: 35px; /* Rayon de fond */
+}
+
+
+#vbox5 {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-background-radius: 35px;
+}
+
+#borderpane {
+    -fx-background-color: rgb(241, 252, 255);
+
+}
+
+/* Style pour le ScrollPane */
+.scroll-pane> .viewport {
+    -fx-background-color: rgb(241, 252, 255);; /* Fond transparent */
+    -fx-border-color: #cccccc; /* Couleur de la bordure */
+    -fx-background-radius: 35; /* Rayon des coins pour arrondir le contour */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 20; /* Rayon des coins pour arrondir le contour de la bordure */
+    -fx-background-insets: 0; /* Pas de remplissage */
+}
+
+/* Style pour la barre de défilement */
+.scroll-pane .scroll-bar > .viewport{
+    -fx-background-color: #f0f0f0; /* Couleur de fond de la barre de défilement */
+}
+
+/* Style pour la poignée de la barre de défilement */
+.scroll-pane .scroll-bar .thumb > .viewport{
+    -fx-background-color: #cccccc; /* Couleur de la poignée */
+}
+
+/* Style pour la flèche de la barre de défilement */
+.scroll-pane .scroll-bar .increment-button,
+.scroll-pane .scroll-bar .decrement-button > .viewport{
+    -fx-background-color: #f0f0f0; /* Couleur de fond des flèches */
+}
+
+/* Style pour la flèche de la barre de défilement lorsqu'elle est survolée */
+.scroll-pane .scroll-bar .increment-button:hover,
+.scroll-pane .scroll-bar .decrement-button:hover > .viewport{
+    -fx-background-color: #e0e0e0; /* Couleur de fond des flèches lorsqu'elles sont survolées */
+}
+
+#circle {
+// -fx-fill: radial-gradient(center, radius, #FFFFFF, #CCCCCC); /* Dégradé de remplissage */
+    -fx-stroke: linear-gradient(from 0% 0% to 100% 100%, #2F3E44, #91bbc1); /* Dégradé de contour */
+    -fx-stroke-width: 3; /* Largeur du contour */
+}
+
+.vbox {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #ffffff, #fffdf9); /* Dégradé de couleur pour l'arrière-plan */
+    -fx-background-radius: 35; /* Rayon des coins pour arrondir le contour */
+    -fx-border-color: #cccccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 35; /* Rayon des coins pour arrondir le contour de la bordure */
+}
+
+/* Style pour les éléments enfants de la VBox */
+.vbox .label {
+    -fx-text-fill: #333333; /* Couleur du texte */
+}
+.vbox .label.erreur {
+    -fx-text-fill: #b40909; /* Couleur du texte */
+}
+
+.vbox .button {
+    -fx-background-color: rgb(135, 172, 181); /* Couleur de fond des boutons */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 17px; /* Taille de la police */
+    -fx-font-family: "Berlin Sans FB"; /* Police */
+    -fx-background-radius: 5px; /* Rayon des coins pour arrondir les boutons */
+}
+
+/* Style pour les boutons lorsqu'ils sont pressés */
+.vbox.button:pressed {
+    -fx-background-color: rgb(110, 150, 160); /* Couleur de fond des boutons lorsqu'ils sont pressés */
+}
+
+.vbox .button:hover {
+    -fx-background-color: #1f7a9e; /* Couleur de fond pour les boutons lorsqu'ils sont survolés */
+}
+
+.vbox .analyse {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #ffffff, #fffdf9); /* Dégradé de couleur pour l'arrière-plan */
+    -fx-background-radius: 35; /* Rayon des coins pour arrondir le contour */
+    -fx-border-color: #c2c2c2; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 10; /* Rayon des coins pour arrondir le contour de la bordure */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 5, 5); /* Ombre portée */
+}
+
+.chart-legend {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #CCCCCC;
+}
+
+.chart-legend-item-symbol {
+    -fx-background-color: #007ACC; /* Couleur de la légende */
+}
+
+
+#modifier {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 10;
+    -fx-pref-width: 100px;
+}
+
+#supprimer {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 10;
+    -fx-pref-width: 100px;
+}
+
+
+#generepdf {
+    -fx-background-color: rgb(135, 172, 181); /* Couleur de fond des boutons */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 17px; /* Taille de la police */
+    -fx-font-family: "Berlin Sans FB"; /* Police */
+    -fx-background-radius: 5px; /* Rayon des coins pour arrondir les boutons */
+}
+
+#generepdf:pressed {
+    -fx-background-color: rgb(110, 150, 160); /* Couleur de fond des boutons lorsqu'ils sont pressés */
+}
+
+#generepdf:hover {
+    -fx-background-color: #1f7a9e; /* Couleur de fond pour les boutons lorsqu'ils sont survolés */
+}

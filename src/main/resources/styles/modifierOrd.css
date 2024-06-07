@@ -1,0 +1,72 @@
+. root {
+    -fx-background-color: rgb(241, 252, 255);
+}
+
+
+#nomP , #prenomP , #ageP , #genreP , #telP , #telP2 , #typeP , #etatP , #dateP , #descP , #codeP , #rdv {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 20;
+}
+
+#modifierOrd {
+    -fx-font-size: 28;
+    -fx-font-family: "Berlin Sans FB";
+
+}
+
+#tfNom , #tfType , #tfCode , #tfAdresse , #tfAge ,#tfPrenom , #tfEtat , #tfTel , #tfGenre , #selectRendezVous{
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: "Berlin Sans FB"; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px;
+}
+
+#typeError , #etatError , #dateError , #descError , #codeError , #selectError {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-text-fill: red;
+    -fx-font-size: 17;
+}
+
+#btnConfirm {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+}
+#annuler {
+    -fx-background-radius: 10;
+    -fx-background-color: rgb(12, 211, 82);
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#maladies , #ord , #profile ,#dec {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 17px;
+}
+#vbox5 {
+    -fx-font-weight: bold;
+}
+
+#pane {
+    -fx-background-color: #ecece6;
+    -fx-background-radius: 10;
+}
+
+#tfDescription {
+    -fx-font-size: 15;
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-text-fill: #333;
+    -fx-font-family: "Berlin Sans FB";
+}

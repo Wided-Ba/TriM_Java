@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditReclamationController">
+   <left>
+      <VBox>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox fx:id="vbox5" alignment="CENTER" prefHeight="869.0" prefWidth="280.0" stylesheets="@../styles/interface.css">
+               <children>
+                  <Circle fx:id="circle" fill="#eeeeee" radius="75.0" stroke="BLACK" strokeType="INSIDE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Label text="Wided Ben Aissi" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Wided.benaissi@esprit.tn" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox layoutX="20.0" layoutY="263.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#Statistique" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/11.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Profile" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#AjouterRendezVous" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-appointment-scheduling-50.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Rendez-Vous" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="263.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#Calendrier" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/rendez-vous.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Calendrier Rendez_Vous" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="263.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#AjouterReclamation" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="selected" stylesheets="@../styles/interface.css">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/demande-de-citation.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="68.0" prefWidth="154.0" text="Reclamation" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox layoutX="20.0" layoutY="263.0" prefWidth="270.0">
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#deconnecter" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/interface.css">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Déconnecter" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="vbox3" prefHeight="200.0" prefWidth="100.0" styleClass="shadow" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Pane fx:id="pane2" prefHeight="400.0" prefWidth="973.0">
+               <VBox.margin>
+                  <Insets left="150.0" right="150.0" top="50.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="190.0" layoutY="187.0" prefHeight="33.0" prefWidth="115.0" text="Description:" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="93.0" prefHeight="34.0" prefWidth="72.0" text="Status" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="descriptionEdit" layoutX="190.0" layoutY="226.0" prefHeight="75.0" prefWidth="316.0" />
+                  <TextField fx:id="statusEdit" layoutX="190.0" layoutY="131.0" prefHeight="38.0" prefWidth="192.0" />
+                  <Button fx:id="EditReclamation" layoutX="243.0" layoutY="341.0" mnemonicParsing="false" onAction="#EditReclamation" prefHeight="39.0" prefWidth="142.0" text="Modifier" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="22.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="descriptionLabelEdit" layoutX="191.0" layoutY="301.0" prefHeight="18.0" prefWidth="271.0" />
+                  <Label fx:id="statusLabelEdit" layoutX="191.0" layoutY="169.0" prefHeight="18.0" prefWidth="282.0" />
+                  <Label layoutX="187.0" layoutY="20.0" prefHeight="50.0" prefWidth="278.0" text="Modifier Reclamation" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <stylesheets>
+            <URL value="@../styles/AjouterRendezVous.css" />
+            <URL value="@../styles/interface.css" />
+         </stylesheets>
+      </VBox>
+   </center>
+   <stylesheets>
+      <URL value="@../styles/interface.css" />
+      <URL value="@../styles/AjouterRendezVous.css" />
+   </stylesheets>
+</BorderPane>

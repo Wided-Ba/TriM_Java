@@ -1,0 +1,35 @@
+. root {
+    -fx-background-color: white;
+}
+
+#type ,#etat , #date ,#prenom , #nom ,#desc{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 18;
+}
+
+#nomPatient {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 26;
+    -fx-text-fill: #02027c;
+}
+#typeOrd , #etatOrd, #dateOrd, #etatOrd ,#descO{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 16;
+}
+
+#ord {
+    -fx-background-radius: 10;
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#pdf {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-background-radius: 15;
+    -fx-background-color: rgb(120, 166, 172);
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-cursor: hand;
+}

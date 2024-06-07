@@ -1,0 +1,65 @@
+.root {
+    -fx-background-color: rgb(241, 252, 255);
+}
+
+#list {
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#btnOrd {
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+#listMaladies .list-cell {
+    -fx-background-radius: 0 0 10 10;
+    -fx-border-radius: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+#list .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+#list .list-cell .label {
+    -fx-padding: 5px 10px;
+}
+
+.edit-button {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+
+    -fx-background-radius: 10;
+    -fx-pref-width: 80px;
+}
+
+.delete-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-pref-width: 80px;
+}
+
+
+#header {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-background-radius: 10 10 0 0;
+
+    -fx-border-radius: 10 10 0 0;
+}
+#nomOrd , #actions {
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+#vbox3 {
+    /* Dégradé de couleur pour l'arrière-plan */
+    -fx-background-radius: 35; /* Rayon des coins pour arrondir le contour */
+    -fx-border-color: #cccccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 35;
+}

@@ -1,0 +1,59 @@
+.root {
+    -fx-background-color: rgb(241, 252, 255);
+}
+
+#text {
+    -fx-font-size: 40;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#pane {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); /* Gaussian blur, shadow color, radius, spread, offset X, offset Y */
+    -fx-background-radius: 10;
+}
+
+#pane1 {
+    -fx-background-color: #4646fa;
+    -fx-background-radius: 10 0 0 10;
+}
+
+#pane2 {
+    -fx-background-color: #fb4040;
+    -fx-background-radius: 10 0 0 10;
+}
+#nbr {
+    -fx-font-size: 17;
+    -fx-text-fill: grey;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#pane3 {
+    -fx-background-color: #40ba40;
+    -fx-background-radius: 10 0 0 10;
+}
+#num , #num1 , #num2 {
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-font-family: "Berlin Sans FB";
+}
+#chartPane {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); /* Gaussian blur, shadow color, radius, spread, offset X, offset Y */
+    -fx-background-radius: 10;
+}
+
+#rdvTitre {
+    -fx-font-size: 18;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#ordTitre {
+    -fx-font-size: 17;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#profile , #ord , #mals ,#dec ,#contact{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 18;
+}

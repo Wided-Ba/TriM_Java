@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterRendezVousController">
+   <left>
+      <VBox>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox fx:id="vbox5" alignment="CENTER" prefHeight="869.0" prefWidth="280.0" stylesheets="@../styles/interface.css">
+               <children>
+                  <Circle fx:id="circle" fill="#eeeeee" radius="75.0" stroke="BLACK" strokeType="INSIDE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Label text="Wided Ben Aissi" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Wided.benaissi@esprit.tn" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox layoutX="20.0" layoutY="263.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#Statistique" prefHeight="50.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/11.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Profile" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#AjouterRendezVous" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="selected">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-appointment-scheduling-50.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Rendez-Vous" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="263.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#Calendrier" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/rendez-vous.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Calendrier Rendez_Vous" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="20.0" layoutY="263.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#AjouterReclamation" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/interface.css">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/demande-de-citation.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="68.0" prefWidth="154.0" text="Reclamation" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox layoutX="20.0" layoutY="263.0" prefWidth="270.0">
+                     <children>
+                        <HBox alignment="CENTER" onMouseClicked="#deconnecter" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/interface.css">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="153.0" text="Déconnecter" textFill="#2f3e44">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="vbox3" alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="271.0" styleClass="shadow" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="50.0" prefWidth="264.0" text="Ajouter Rendez-Vous" textFill="#2f3e44">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <Pane fx:id="pane2" prefHeight="400.0" prefWidth="790.0">
+               <children>
+                  <DatePicker fx:id="dateAjout" editable="false" layoutX="476.0" layoutY="199.0" prefHeight="38.0" prefWidth="192.0" />
+                  <Label layoutX="106.0" layoutY="201.0" prefHeight="33.0" prefWidth="72.0" text="Motif" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="423.0" layoutY="199.0" prefHeight="33.0" prefWidth="72.0" text="Date" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="ajouterRendezAction" layoutX="265.0" layoutY="297.0" mnemonicParsing="false" onAction="#ajouterRendezAction" prefHeight="40.0" prefWidth="110.0" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Show" layoutX="410.0" layoutY="297.0" mnemonicParsing="false" onAction="#Show" prefHeight="40.0" prefWidth="117.0" text="Afficher" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Button>
+                  <ChoiceBox fx:id="motifAjout" layoutX="160.0" layoutY="199.0" prefHeight="38.0" prefWidth="192.0" />
+                  <Label fx:id="labelMotif" layoutX="160.0" layoutY="238.0" prefHeight="18.0" prefWidth="264.0" />
+                  <Label fx:id="labelDate" layoutX="476.0" layoutY="238.0" prefHeight="18.0" prefWidth="264.0" />
+                  <ChoiceBox fx:id="specialiteMed" layoutX="160.0" layoutY="99.0" prefHeight="38.0" prefWidth="192.0" />
+                  <ChoiceBox fx:id="NomMed" layoutX="476.0" layoutY="99.0" prefHeight="38.0" prefWidth="192.0" />
+                  <Label fx:id="labelNomMed" layoutX="476.0" layoutY="138.0" prefHeight="18.0" prefWidth="264.0" />
+                  <Label fx:id="label" layoutX="161.0" layoutY="138.0" prefHeight="18.0" prefWidth="264.0" />
+                  <Label layoutX="70.0" layoutY="99.0" prefHeight="44.0" prefWidth="117.0" text="Specialite" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="396.0" layoutY="99.0" prefHeight="44.0" prefWidth="103.0" text="Medecin" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Pane>
+         </children>
+         <stylesheets>
+            <URL value="@../styles/interface.css" />
+            <URL value="@../styles/AjouterRendezVous.css" />
+         </stylesheets>
+      </VBox>
+   </center>
+   <stylesheets>
+      <URL value="@../styles/interface.css" />
+      <URL value="@../styles/AjouterRendezVous.css" />
+   </stylesheets>
+</BorderPane>

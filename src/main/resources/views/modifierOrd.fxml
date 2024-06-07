@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="890.0" prefWidth="1315.0" stylesheets="@../styles/modifierOrd.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierOrdController">
+   <children>
+      <Pane fx:id="pane" layoutX="478.0" layoutY="238.0" prefHeight="400.0" prefWidth="790.0">
+         <children>
+            <ComboBox fx:id="tfEtat" layoutX="474.0" layoutY="67.0" prefHeight="38.0" prefWidth="192.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Label fx:id="etatError" layoutX="480.0" layoutY="111.0" text="etat est obligatoire" />
+            <Label fx:id="etatP" layoutX="484.0" layoutY="39.0" text="Etat" />
+            <ComboBox fx:id="tfType" disable="true" layoutX="134.0" layoutY="67.0" prefHeight="38.0" prefWidth="192.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+            <Label fx:id="typeP" layoutX="148.0" layoutY="38.0" text="Type" />
+            <Label fx:id="typeError" layoutX="145.0" layoutY="109.0" text="type est obligatoire" />
+            <TextField fx:id="tfCode" disable="true" layoutX="134.0" layoutY="173.0" prefHeight="38.0" prefWidth="192.0" />
+            <Label fx:id="descError" layoutX="477.0" layoutY="263.0" text="descritption est obligatoire" />
+            <TextArea fx:id="tfDescription" layoutX="474.0" layoutY="177.0" prefHeight="82.0" prefWidth="192.0" />
+            <Label fx:id="descP" layoutX="479.0" layoutY="151.0" text="Descritpion" />
+            <Label fx:id="codeP" layoutX="140.0" layoutY="148.0" text="Code" />
+            <Label fx:id="codeError" layoutX="143.0" layoutY="217.0" text="code est obligatoire" />
+            <Button fx:id="btnConfirm" layoutX="416.0" layoutY="322.0" mnemonicParsing="false" onAction="#modifierOrd" prefHeight="40.0" prefWidth="110.0" text="Confirmer">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="annuler" layoutX="265.0" layoutY="322.0" mnemonicParsing="false" onAction="#annuler" prefHeight="40.0" prefWidth="110.0" text="Annuler">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></Pane>
+      <VBox fx:id="vbox5" alignment="CENTER" layoutX="6.0" layoutY="1.0" prefHeight="873.0" prefWidth="290.0" stylesheets="@../styles/analyse.css">
+         <children>
+            <HBox>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="263.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Circle fx:id="circle" fill="#eeeeee" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label text="Amine Yousfi" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Amine.yousfi@gmail.com" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox layoutX="20.0" layoutY="263.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="Profile" alignment="CENTER" onMouseClicked="#toProfile" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/ajoutMaladie.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/profile.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="profile" prefHeight="32.0" prefWidth="152.0" stylesheets="@../styles/ajoutMaladie.css" text="Profile" textFill="#2f3e44">
+                     <font>
+                        <Font name="Berlin Sans FB" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="ordList" alignment="CENTER" onMouseClicked="#toOrdList" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="selected" stylesheets="@../styles/analyse.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ords.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="ord" prefHeight="32.0" prefWidth="152.0" text="Ordonnances" textFill="#2f3e44">
+                     <font>
+                        <Font name="Gadugi" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+            <HBox fx:id="afficheld" alignment="CENTER" onMouseClicked="#toListMaladies" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/mal.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="maladies" prefHeight="52.0" prefWidth="152.0" text="Maladies" textFill="#2f3e44">
+                     <font>
+                        <Font name="Gadugi" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Pane prefHeight="11.0" prefWidth="280.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" layoutX="-3.0" layoutY="-2.0" prefHeight="60.0" prefWidth="290.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/chat.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="contact" prefHeight="32.0" prefWidth="152.0" stylesheets="@../styles/listMaladies.css" text="Contact" textFill="#2f3e44">
+                           <font>
+                              <Font name="Gadugi" size="17.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children></Pane>
+            <HBox layoutX="20.0" layoutY="263.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="270.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../styles/analyse.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/se-deconnecter.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="dec" prefHeight="32.0" prefWidth="153.0" text="Déconnecter" textFill="#2f3e44">
+                           <font>
+                              <Font name="Gadugi" size="17.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fitHeight="46.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <Label fx:id="modifierOrd" layoutX="750.0" layoutY="180.0" text="Modifier Ordonnance" />
+   </children>
+</AnchorPane>

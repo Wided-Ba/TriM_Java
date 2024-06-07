@@ -1,0 +1,77 @@
+.root {
+    -fx-background-color: rgb(241, 252, 255);
+}
+
+#modifierMaladie {
+    -fx-font-size: 28;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#tfNom ,#tfType {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+    -fx-text-fill: #333; /* Couleur du texte */
+    -fx-font-family: "Berlin Sans FB"; /* Police de caractère */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+    -fx-border-radius: 5px; /* Rayon de la bordure */
+    -fx-padding: 5px;
+}
+
+#tfDescription , #tfSymptome {
+    -fx-font-size: 15;
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-text-fill: #333;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#btnConfirmer {
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-size: 18;
+    -fx-cursor: hand;
+    -fx-font-family: "Berlin Sans FB";
+}
+#btnConfirmer:hover {
+    -fx-background-color: rgb(100, 140, 150);
+}
+
+#nom ,#type, #symp , #desc {
+    -fx-font-size: 20;
+    -fx-text-fill: #2f3e44;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#profile, #mals , #ord ,#dec {
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 20;
+}
+
+#retour {
+    -fx-background-radius: 10;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-cursor: hand;
+    -fx-font-size: 17;
+    -fx-background-color: rgb(135, 172, 181);
+    -fx-text-fill: white;
+}
+
+#sympError , #descError{
+    -fx-text-fill: red;
+    -fx-font-size: 17;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+#pane {
+    -fx-background-color: #f5f5f0;
+    -fx-background-radius: 20px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 20px;
+}
+#afficheMaladies {
+    -fx-cursor: hand;
+}

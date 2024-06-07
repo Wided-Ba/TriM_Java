@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel='stylesheet' href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css'>
+</head>
+<body>
+<div id='map' style='height:500px;'></div>
+<script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+<script>
+    var map = L.map('map').setView([36.8, 10.2], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+        maxZoom: 18
+    }).addTo(map);
+    var currentMarker = null;
+    var selectedAddress = '';
+    map.on('click', function(event) {
+        var latitude = event.latlng.lat;
+        var longitude = event.latlng.lng;
+        if (currentMarker) {
+            map.removeLayer(currentMarker);
+        }
+        currentMarker = L.marker([latitude, longitude]).addTo(map)
+            .bindPopup('Chargement de l\'adresse...')
+            .openPopup();
+        var url = 'https://nominatim.openstreetmap.org/reverse?format=json&lat=' + latitude + '&lon=' + longitude;
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                var address = data.display_name;
+                currentMarker.setPopupContent('Adresse : ' + address);
+                selectedAddress = address;
+                app.updateSelectedAddress(address);
+            });
+    });
+
+    function getSelectedAddress() {
+        return selectedAddress;
+    }
+</script>
+</body>
+</html>
